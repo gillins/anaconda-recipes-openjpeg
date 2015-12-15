@@ -22,7 +22,7 @@ requirements:
     - openjpeg
     - libtiff
     - libpng
-    - zlib
+    - zlib [not win]
     - jpeg
   run:
     - hdf4
@@ -35,7 +35,7 @@ requirements:
     - openjpeg
     - libtiff
     - libpng
-    - zlib
+    - zlib [not win]
     - jpeg
 
 test:
