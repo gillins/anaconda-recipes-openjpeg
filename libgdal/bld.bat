@@ -28,7 +28,16 @@ set BLD_OPTS=%WIN64% ^
     NETCDF_INC_DIR=%LIBRARY_INC% ^
     NETCDF_SETTING=yes ^
     KEA_CFLAGS="-I%LIBRARY_INC%" ^
-    KEA_LIB=%LIBRARY_LIB%\libkea.lib
+    KEA_LIB=%LIBRARY_LIB%\libkea.lib ^
+    TIFF_INC=%LIBRARY_INC% ^
+    TIFF_LIB=%LIBRARY_LIB%\libtiff.lib ^
+    TIFF_OPTS=-DBIGTIFF_SUPPORT ^
+    PNG_EXTERNAL_LIB=1 ^
+    PNGDIR=%LIBRARY_PREFIX% ^
+    PNG_LIB=%LIBRARY_LIB%\libpng.lib ^
+    JPEG_EXTERNAL_LIB=1 ^
+    JPEGDIR=%LIBRARY_PREFIX% ^
+    JPEG_LIB=%LIBRARY_LIB%\libjpeg.lib
 
 nmake /f makefile.vc %BLD_OPTS%
 if errorlevel 1 exit 1
