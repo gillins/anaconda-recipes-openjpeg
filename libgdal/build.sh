@@ -17,6 +17,7 @@ bash configure \
     --with-netcdf=$PREFIX \
     --with-geos=$PREFIX/bin/geos-config \
     --with-kea=$PREFIX/bin/kea-config \
+    --with-openjpeg=$PREFIX \
     --prefix=$PREFIX
 make
 make install

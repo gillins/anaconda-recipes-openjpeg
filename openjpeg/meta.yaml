@@ -1,0 +1,27 @@
+package:
+  name: openjpeg
+  version: "2.1.0"
+
+source:
+  url: https://github.com/uclouvain/openjpeg/archive/version.2.1.tar.gz
+  fn: version.2.1.tar.gz
+  md5: 3e1c451c087f8462955426da38aa3b3d
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - cmake
+    - libtiff
+    - libpng
+    - zlib
+  run:
+    - libtiff
+    - libpng
+    - zlib
+
+about:
+  home: http://www.openjpeg.org/
+  license: BSD
+  summary: An open-source JPEG 2000 codec written in C.

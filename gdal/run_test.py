@@ -35,6 +35,10 @@ assert driver is not None
 driver = gdal.GetDriverByName("KEA")
 assert driver is not None
 
+# only available when openjpeg successfully linked in
+driver = gdal.GetDriverByName("JP2OpenJPEG")
+assert driver is not None
+
 # only available when xerces-c++ successfully linked in
 driver = ogr.GetDriverByName("GML")
 assert driver is not None

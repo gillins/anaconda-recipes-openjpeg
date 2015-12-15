@@ -8,7 +8,7 @@ source:
   md5: 2c5f8f12ed416febd2cbd7b63c48eb17
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -19,6 +19,7 @@ requirements:
     - xerces-c
     - libnetcdf
     - kealib
+    - openjpeg
   run:
     - hdf4
     - hdf5
@@ -27,6 +28,7 @@ requirements:
     - xerces-c
     - libnetcdf
     - kealib
+    - openjpeg
 
 test:
   commands:
