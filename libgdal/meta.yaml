@@ -20,6 +20,10 @@ requirements:
     - libnetcdf
     - kealib
     - openjpeg
+    - libtiff
+    - libpng
+    - zlib
+    - jpeg
   run:
     - hdf4
     - hdf5
@@ -29,6 +33,10 @@ requirements:
     - libnetcdf
     - kealib
     - openjpeg
+    - libtiff
+    - libpng
+    - zlib
+    - jpeg
 
 test:
   commands:

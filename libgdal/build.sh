@@ -18,6 +18,10 @@ bash configure \
     --with-geos=$PREFIX/bin/geos-config \
     --with-kea=$PREFIX/bin/kea-config \
     --with-openjpeg=$PREFIX \
+    --with-jpeg=$PREFIX \
+    --with-libtiff=$PREFIX \
+    --with-png=$PREFIX \
+    --with-libz=$PREFIX \
     --prefix=$PREFIX
 make
 make install
